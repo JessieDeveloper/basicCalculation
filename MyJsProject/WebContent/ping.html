@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+background-color: pink;
+}
+p{
+color: purple;
+}
+h1{
+color:magenta;
+}
+
+
+</style>
+<script>
+
+function addNumbers(){
+
+var a = document.getElementById("num1").value;
+var b = document.getElementById("num2").value;
+var x = Number(a)+ Number(b);
+document.getElementById("demo").innerHTML = x;
+
+}
+
+
+</script>
+
+</head>
+<body>
+
+<p>This is a table to help with basic arithmetics</p>
+<h1>Please enter two numbers to calculate the sum</h1>
+Enter your first number:
+<input type="text" id="num1" name="number1" value=""><br>
+<br>
+Enter your second number:
+<input type="text" id="num2" name="number2" value=""><br>
+<button onclick="addNumbers()">Receive Sum</button>
+<p id="demo"></p>
+
+
+
+</body>
+</html> 
